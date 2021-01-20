@@ -1,0 +1,128 @@
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./CSS/style.css">
+     <title>C.S Nutrition</title>
+ </head>
+ <body>
+     <header>
+         <h3 id = "titleHeader">C.S Nutrition</h3>
+     </header>
+     <main>
+         <section class="table">
+             <h1 class = "tableTitle">Meus Pacientes</h1>
+             <hr>
+             <label for="search" id = "labelsearch">Busca</label>
+             <input type="text" name= "filter" id = "search" placeholder="Digite o Nome do Paciente"> 
+             <a class="searchBtn">
+                 <img src="./assets/lupa-removebg-preview.png" alt="" width="35px">
+             </a>
+             <span id = "errorSearch"></span>
+             <table>
+                 
+                 <thead>
+                     <th>Nome</th>
+                     <th>Peso(kg)</th>
+                     <th>Altura(m)</th>
+                     <th>Gordura Corporal(%)</th>
+                     <th>IMC</th>
+                 </thead>
+                 <tbody id = "table-patients">
+                     <tr class = "patient" id = "first-patient">
+                         <td class = "info-nome">Paulo Santos</td>
+                         <td class = "info-peso">100</td>
+                         <td class = "info-altura">2.00</td>
+                         <td class = "info-gordura">30</td>
+                         <td class = "info-imc">0</td>
+                     </tr>
+                     <tr class = "patient" id = "second-patient">
+                        <td class = "info-nome">João Ferreira</td>
+                        <td class = "info-peso">80</td>
+                        <td class = "info-altura">1.72</td>
+                        <td class = "info-gordura">40</td>
+                        <td class = "info-imc">0</td>
+                    </tr>
+                    <tr class = "patient" id = "third-patient">
+                        <td class = "info-nome">Érica Bastos</td>
+                        <td class = "info-peso">54</td>
+                        <td class = "info-altura">1.64</td>
+                        <td class = "info-gordura">14</td>
+                        <td class = "info-imc">0</td>
+                    </tr>
+                    <tr class = "patient" id = "bedroom-patient">
+                        <td class = "info-nome">Douglas Costa</td>
+                        <td class = "info-peso">85</td>
+                        <td class = "info-altura">1.73</td>
+                        <td class = "info-gordura">24</td>
+                        <td class = "info-imc">0</td>
+                    </tr>
+                    <tr class = "patient" id = "fift-patient">
+                        <td class = "info-nome">Tatiana Hernanes</td>
+                        <td class = "info-peso">46</td>
+                        <td class = "info-altura">1.55</td>
+                        <td class = "info-gordura">19</td>
+                        <td class = "info-imc">0</td>
+                    </tr>
+                    <tr class = "patient" id = "sixth-patient">
+                        <td class = "info-nome">Ana Camini</td>
+                        <td class = "info-peso">86</td>
+                        <td class = "info-altura">1.69</td>
+                        <td class = "info-gordura">34</td>
+                        <td class = "info-imc">0</td>
+                    </tr>
+                    <tr class = "patient" id = "seventh-patient">
+                        <td class = "info-nome">Cibele Santos</td>
+                        <td class = "info-peso">74</td>
+                        <td class = "info-altura">1.74</td>
+                        <td class = "info-gordura">24</td>
+                        <td class = "info-imc">0</td>
+                    </tr>
+                    <tr class = "patient" id = "eighth-patient">
+                        <td class = "info-nome">Antônia Oliveira</td>
+                        <td class = "info-peso">68</td>
+                        <td class = "info-altura">1.69</td>
+                        <td class = "info-gordura">32</td>
+                        <td class = "info-imc">0</td>
+                    </tr>
+                 </tbody>
+                 
+             </table>
+             <button id="search-patient">Buscar</button>
+            
+            </section>
+            <section class="container">
+                <h2 id="title-form">Adicionar novo paciente</h2>
+                <ul class="error"></ul>
+                <form id = "form">
+                    <div class="group">
+                        <label for="nome">Nome:</label>
+                        <input id="nome" name="name" type="text" placeholder="digite o nome do seu paciente" class="camp">
+                    </div>
+                    <div class="group">
+                        <label for="peso">Peso:</label>
+                        <input id="peso" name="weight" type="text" placeholder="digite o peso do seu paciente" class="camp camp-medium">
+                    </div>
+                    <div class="group">
+                        <label for="altura">Altura:</label>
+                        <input id="altura" name="height" type="text" placeholder="digite a altura do seu paciente" class="camp camp-mediium">
+                    </div>
+                    <div class="group">
+                        <label for="gordura">% de Gordura:</label>
+                        <input id="gordura" type="text" placeholder="digite a % de gordura do seu paciente" class="camp camp-mediium">
+                    </div>
+            
+                    <button id="more-patient" class="button bto-main">Adicionar</button>
+                    
+                </form>
+            </section>
+
+     </main>
+     <script src="./JS/nutrition.js"></script>
+     <script src="./JS/form.js"></script>
+     <script src = "JS/remove.js"></script>
+     <script src="./JS/filter.js"></script>
+     <script src="./JS/server.js"></script>
+ </body>
+ </html>
